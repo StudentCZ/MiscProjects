@@ -1,9 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
+import NavBar from './NavBar';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Miscellaneous Projects</h1>
+      <Routes></Routes>
     </div>
   );
 }

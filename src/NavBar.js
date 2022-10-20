@@ -1,6 +1,6 @@
 import style from './NavBar.module.css';
 
-const Router = () => {
+const NavBar = () => {
   return (
     <>
       <nav className={style.navBar}>
@@ -12,4 +12,4 @@ const Router = () => {
   );
 };
 
-export default Router;
+export default NavBar;
