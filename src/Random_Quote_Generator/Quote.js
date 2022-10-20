@@ -1,7 +1,13 @@
 import React from 'react';
+import Home from '../Home';
 
 const Quote = () => {
-  return <div>Quotes</div>;
+  return (
+    <div>
+      <Home />
+      Quotes
+    </div>
+  );
 };
 
 export default Quote;
