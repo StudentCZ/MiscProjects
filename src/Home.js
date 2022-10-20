@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 const Home = () => {
   return (
     <div>
-      Hello Friend
+      <h1>Miscellaneous Projects</h1>
       <NavBar />
     </div>
   );
