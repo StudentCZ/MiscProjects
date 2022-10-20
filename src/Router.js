@@ -1,9 +1,14 @@
 import { BrowserRouter } from 'react-router-dom';
+import style from './Router.module.css';
 
 const Router = () => {
   return (
     <>
-      <nav>Hello</nav>
+      <nav className={style.navBar}>
+        <ul>
+          <li>HomePage</li>
+        </ul>
+      </nav>
     </>
   );
 };
