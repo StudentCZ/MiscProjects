@@ -5,7 +5,7 @@ const Router = () => {
   return (
     <>
       <nav className={style.navBar}>
-        <ul>
+        <ul className={style.li}>
           <li>HomePage</li>
         </ul>
       </nav>
