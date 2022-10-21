@@ -6,12 +6,16 @@ const Quote = () => {
   const [quotes, setQuotes] = useState([]);
   const [randomQuote, setRandomQuote] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetch('https://animechan.vercel.app/api/random')
+      .then((response) => response.json())
+      .then((quote) => setQuotes(quote));
+  }, []);
 
   return (
     <div>
       <Home />
-      Quotes
+      Quotes = {quotes.anime}
     </div>
   );
 };
