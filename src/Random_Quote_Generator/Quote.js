@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 const Quote = () => {
   const [quotes, setQuotes] = useState([]);
   const [randomQuote, setRandomQuote] = useState('');
+  const [color, setColor] = useState('');
 
   async function getQuote() {
     const res = await fetch('https://animechan.vercel.app/api/quotes');
@@ -12,11 +13,23 @@ const Quote = () => {
 
     setQuotes(data);
     let randomIdx = Math.floor(Math.random() * data.length);
+    let randomColorIdx = Math.floor(Math.random() * color.length);
     setRandomQuote(data[randomIdx]);
   }
 
   const getNewQuote = () => {
-    const randomColor = () => {};
+    const colors = [
+      '#FF3F33',
+      '#FF9933',
+      '#FFD433',
+      '#ECFF33',
+      '#C4FF33',
+      '#5EFF33',
+      '#33FF7A',
+      '#33FFC7',
+      '#33F0FF',
+      '#339FFF',
+    ];
     getQuote();
     // let randomIdx = Math.floor(Math.random() * quotes.length);
     // setRandomQuote(quotes[randomIdx]);
