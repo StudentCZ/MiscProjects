@@ -7,11 +7,15 @@ const Quote = () => {
   const [randomQuote, setRandomQuote] = useState([]);
 
   useEffect(() => {
-    fetch('https://animechan.vercel.app/api/random')
-      .then((response) => response.json())
-      .then((quote) => setQuotes(quote));
+    async function getQuote() {
+      fetch('https://animechan.vercel.app/api/quotes')
+        .then((response) => response.json())
+        .then((quotes) => setQuotes(quotes));
+    }
+    getQuote();
   }, []);
 
+  console.log(quotes);
   return (
     <div>
       <Home />
