@@ -29,13 +29,16 @@ const Quote = () => {
               {randomQuote ? (
                 <div>
                   <h5 className='card-title'>{randomQuote.character}</h5>
-                  <p className='card-text'>{randomQuote.quote}</p>
+                  <p className='card-text'>&quot;{randomQuote.quote}&quot;</p>
                 </div>
               ) : (
                 <>
                   <h2>Loading</h2>
                 </>
               )}
+              <div className='row'>
+                <button>New Quote</button>
+              </div>
             </div>
           </div>
         </div>
