@@ -18,6 +18,11 @@ const Quote = () => {
     getQuote();
   }, []);
 
+  const getNewQuote = () => {
+    let randomIdx = Math.floor(Math.random() * quotes.length);
+    setRandomQuote(quotes[randomIdx]);
+  };
+
   return (
     <>
       <Home />
@@ -37,7 +42,7 @@ const Quote = () => {
                 </>
               )}
               <div className='row'>
-                <button>New Quote</button>
+                <button onClick={getNewQuote}>New Quote</button>
               </div>
             </div>
           </div>
