@@ -1,5 +1,9 @@
 .navBar {
   background-color: red;
+  text-align: center;
+  padding: 1vw;
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 .li {
