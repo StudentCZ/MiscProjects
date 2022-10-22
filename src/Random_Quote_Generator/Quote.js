@@ -20,10 +20,14 @@ const Quote = () => {
 
   console.log(quotes);
   return (
-    <div>
+    <>
       <Home />
-      Quotes
-    </div>
+      <div className='container'>
+        {quotes.map((quote, idx) => {
+          return <div key={idx}>{quote.anime}</div>;
+        })}
+      </div>
+    </>
   );
 };
 
