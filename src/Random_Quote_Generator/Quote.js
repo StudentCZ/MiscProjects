@@ -8,9 +8,12 @@ const Quote = () => {
 
   useEffect(() => {
     async function getQuote() {
-      fetch('https://animechan.vercel.app/api/quotes')
-        .then((response) => response.json())
-        .then((quotes) => setQuotes(quotes));
+      const res = await fetch('https://animechan.vercel.app/api/quotes');
+      const data = await res.json();
+
+      setQuotes(data);
+      let randomIdx = Math.floor(Math.random() * data.length);
+      setRandomQuote(data[randomIdx]);
     }
     getQuote();
   }, []);
@@ -19,7 +22,7 @@ const Quote = () => {
   return (
     <div>
       <Home />
-      Quotes = {quotes.anime}
+      Quotes
     </div>
   );
 };
