@@ -36,7 +36,7 @@ const Quote = () => {
       '#FF33C4',
       '#FF3380',
     ];
-    let randomColorIdx = Math.floor(Math.random() * color.length);
+    let randomColorIdx = Math.floor(Math.random() * colors.length);
     setColor(colors[randomColorIdx]);
     getQuote();
     // let randomIdx = Math.floor(Math.random() * quotes.length);
