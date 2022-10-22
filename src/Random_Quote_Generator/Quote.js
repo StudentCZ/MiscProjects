@@ -6,23 +6,27 @@ const Quote = () => {
   const [quotes, setQuotes] = useState([]);
   const [randomQuote, setRandomQuote] = useState('');
 
-  useEffect(() => {
-    async function getQuote() {
-      const res = await fetch('https://animechan.vercel.app/api/quotes');
-      const data = await res.json();
+  async function getQuote() {
+    const res = await fetch('https://animechan.vercel.app/api/quotes');
+    const data = await res.json();
 
-      setQuotes(data);
-      let randomIdx = Math.floor(Math.random() * data.length);
-      setRandomQuote(data[randomIdx]);
-    }
-    getQuote();
-  }, []);
+    setQuotes(data);
+    let randomIdx = Math.floor(Math.random() * data.length);
+    setRandomQuote(data[randomIdx]);
+  }
 
   const getNewQuote = () => {
-    let randomIdx = Math.floor(Math.random() * quotes.length);
-    setRandomQuote(quotes[randomIdx]);
+    const randomColor = () => {};
+    getQuote();
+    // let randomIdx = Math.floor(Math.random() * quotes.length);
+    // setRandomQuote(quotes[randomIdx]);
   };
 
+  useEffect(() => {
+    getNewQuote();
+  }, []);
+
+  console.log(quotes);
   return (
     <>
       <Home />
