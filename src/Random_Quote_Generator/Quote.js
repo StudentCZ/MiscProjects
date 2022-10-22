@@ -28,6 +28,13 @@ const Quote = () => {
       '#33FFC7',
       '#33F0FF',
       '#339FFF',
+      '#3364FF',
+      '#3C33FF',
+      '#8633FF',
+      '#CA33FF',
+      '#FF33F0',
+      '#FF33C4',
+      '#FF3380',
     ];
     let randomColorIdx = Math.floor(Math.random() * color.length);
     setColor(colors[randomColorIdx]);
