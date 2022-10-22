@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 const Quote = () => {
   const [quotes, setQuotes] = useState([]);
-  const [randomQuote, setRandomQuote] = useState([]);
+  const [randomQuote, setRandomQuote] = useState('');
 
   useEffect(() => {
     async function getQuote() {
@@ -25,7 +25,17 @@ const Quote = () => {
         <div className='jumbotron'>
           <div className='card'>
             <div className='card-header'>Anime Quotes</div>
-            <div className='card-body'></div>
+            <div className='card-body'>
+              {randomQuote ? (
+                <div>
+                  <h5 className='card-title'>{randomQuote.character}</h5>
+                </div>
+              ) : (
+                <>
+                  <h2>Loading</h2>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>
