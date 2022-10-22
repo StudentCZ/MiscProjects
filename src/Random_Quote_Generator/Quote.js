@@ -13,7 +13,6 @@ const Quote = () => {
 
     setQuotes(data);
     let randomIdx = Math.floor(Math.random() * data.length);
-    let randomColorIdx = Math.floor(Math.random() * color.length);
     setRandomQuote(data[randomIdx]);
   }
 
@@ -30,6 +29,8 @@ const Quote = () => {
       '#33F0FF',
       '#339FFF',
     ];
+    let randomColorIdx = Math.floor(Math.random() * color.length);
+    setColor(colors[randomColorIdx]);
     getQuote();
     // let randomIdx = Math.floor(Math.random() * quotes.length);
     // setRandomQuote(quotes[randomIdx]);
@@ -43,26 +44,28 @@ const Quote = () => {
   return (
     <>
       <Home />
-      <div className='container pt-5 text-center'>
-        <div className='jumbotron'>
-          <div className='card'>
-            <div className='card-header'>Anime Quotes</div>
-            <div className='card-body'>
-              {randomQuote ? (
-                <div>
-                  <h5 className='card-title'>{randomQuote.character}</h5>
-                  <p className='card-text'>&quot;{randomQuote.quote}&quot;</p>
-                </div>
-              ) : (
-                <>
-                  <h2>Loading</h2>
-                </>
-              )}
-              <div className='row pt-3 btn-group'>
-                <div className='col'>
-                  <button className='btn btn-primary' onClick={getNewQuote}>
-                    New Quote
-                  </button>
+      <div style={{ backgroundColor: color, minHeight: '100vh' }}>
+        <div className='container pt-5 text-center'>
+          <div className='jumbotron'>
+            <div className='card'>
+              <div className='card-header'>Anime Quotes</div>
+              <div className='card-body'>
+                {randomQuote ? (
+                  <div>
+                    <h5 className='card-title'>{randomQuote.character}</h5>
+                    <p className='card-text'>&quot;{randomQuote.quote}&quot;</p>
+                  </div>
+                ) : (
+                  <>
+                    <h2>Loading</h2>
+                  </>
+                )}
+                <div className='row pt-3 btn-group'>
+                  <div className='col'>
+                    <button className='btn btn-primary' onClick={getNewQuote}>
+                      New Quote
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
