@@ -26,32 +26,27 @@ const Quote = () => {
   return (
     <>
       <Home />
-      <div className='container pt-5'>
+      <div className='container pt-5 text-center'>
         <div className='jumbotron'>
           <div className='card'>
-            <div className='card-header text-center'>Anime Quotes</div>
+            <div className='card-header'>Anime Quotes</div>
             <div className='card-body'>
               {randomQuote ? (
                 <div>
-                  <h5 className='card-title text-center'>
-                    {randomQuote.character}
-                  </h5>
-                  <p className='card-text text-center'>
-                    &quot;{randomQuote.quote}&quot;
-                  </p>
+                  <h5 className='card-title'>{randomQuote.character}</h5>
+                  <p className='card-text'>&quot;{randomQuote.quote}&quot;</p>
                 </div>
               ) : (
                 <>
                   <h2>Loading</h2>
                 </>
               )}
-              <div className='row'>
-                <button
-                  className='btn btn-primary text-right'
-                  onClick={getNewQuote}
-                >
-                  New Quote
-                </button>
+              <div className='row pt-3 btn-group'>
+                <div className='col'>
+                  <button className='btn btn-primary' onClick={getNewQuote}>
+                    New Quote
+                  </button>
+                </div>
               </div>
             </div>
           </div>
