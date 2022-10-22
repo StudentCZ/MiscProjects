@@ -23,8 +23,10 @@ const Quote = () => {
       <Home />
       <div className='text-center container pt-5'>
         <div className='jumbotron'>
-          <div className='card'></div>
-          <h1>Hello</h1>
+          <div className='card'>
+            <div className='card-header'>Anime Quotes</div>
+            <div className='card-body'></div>
+          </div>
         </div>
       </div>
     </>
