@@ -18,14 +18,14 @@ const Quote = () => {
     getQuote();
   }, []);
 
-  console.log(quotes);
   return (
     <>
       <Home />
-      <div className='container'>
-        {quotes.map((quote, idx) => {
-          return <div key={idx}>{quote.anime}</div>;
-        })}
+      <div className='text-center container pt-5'>
+        <div className='jumbotron'>
+          <div className='card'></div>
+          <h1>Hello</h1>
+        </div>
       </div>
     </>
   );
