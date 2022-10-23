@@ -51,7 +51,10 @@ const Quote = () => {
   return (
     <>
       <Home />
-      <div style={{ backgroundColor: color, minHeight: '100vh' }}>
+      <div
+        className='easeOut'
+        style={{ backgroundColor: color, minHeight: '100vh' }}
+      >
         <div className='container pt-5 text-center'>
           <div className='jumbotron'>
             <div className='card'>
