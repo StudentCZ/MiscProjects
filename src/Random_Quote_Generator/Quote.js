@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from '../Home';
 import { useState, useEffect } from 'react';
+import style from './Quote.module.css';
 
 const Quote = () => {
   const [quotes, setQuotes] = useState([]);
@@ -52,7 +53,7 @@ const Quote = () => {
     <>
       <Home />
       <div
-        className='easeOut'
+        className={style.easeOut}
         style={{ backgroundColor: color, minHeight: '100vh' }}
       >
         <div className='container pt-5 text-center'>
