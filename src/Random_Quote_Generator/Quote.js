@@ -56,6 +56,7 @@ const Quote = () => {
         className={style.easeOut}
         style={{ backgroundColor: color, minHeight: '100vh' }}
       >
+        <h1 className='text-center pt-3'>Random Quote Generator</h1>
         <div className='container pt-5 text-center'>
           <div className='jumbotron'>
             <div className='card'>
