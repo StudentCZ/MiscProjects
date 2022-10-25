@@ -5,8 +5,13 @@ const Markdown = () => {
 
   return (
     <div>
-      <textarea id='editor'></textarea>
-      <div id='preview'></div>
+      <textarea
+        id='editor'
+        onChange={(event) => {
+          setText(event.target.value);
+        }}
+      ></textarea>
+      <div id='preview'>{text}</div>
     </div>
   );
 };
