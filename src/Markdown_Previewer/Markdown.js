@@ -5,6 +5,7 @@ const Markdown = () => {
 
   return (
     <div>
+      <h1>Markdown Previewer</h1>
       <textarea
         id='editor'
         onChange={(event) => {
