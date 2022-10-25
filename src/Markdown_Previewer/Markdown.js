@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Markdown = () => {
+  const [text, setText] = useState('');
+
   return (
     <div>
       <textarea id='editor'></textarea>
