@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import Home from '../Home';
-import { Link } from 'react-router-dom';
 
 const Markdown = () => {
   const [text, setText] = useState('');
 
   return (
     <div>
-      <Link to='/'>Home</Link>
+      <Home />
 
       <h1>Markdown Previewer</h1>
       <textarea
