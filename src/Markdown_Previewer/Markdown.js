@@ -14,7 +14,8 @@ const Markdown = () => {
           setText(event.target.value);
         }}
       ></textarea>
-      <div id='preview'>{text}</div>
+      <div id='preview'></div>
+      <span className='border border-primary w-100 p-3'>{text}</span>
     </div>
   );
 };
