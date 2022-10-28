@@ -7,7 +7,7 @@ const Markdown = () => {
   return (
     <div className='text-center'>
       <Home />
-      <h1>Markdown Previewer</h1>
+      <h1 className='mt-3'>Markdown Previewer</h1>
       <textarea
         id='editor'
         onChange={(event) => {
@@ -16,7 +16,9 @@ const Markdown = () => {
       ></textarea>
       <div class='border border-danger p-5 mb-5 mt-5'>
         <div class='text-center'>
-          <div class='border p-4'>{text}</div>
+          <div class='border p-4' style={{ backgroundColor: 'lightblue' }}>
+            {text}
+          </div>
         </div>
       </div>
     </div>
