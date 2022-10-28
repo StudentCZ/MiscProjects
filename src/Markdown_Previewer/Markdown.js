@@ -3,7 +3,7 @@ import Home from '../Home';
 import { marked } from 'marked';
 
 const Markdown = () => {
-  const [text, setText] = useState('# H');
+  const [text, setText] = useState(`# Name: Sam`);
 
   return (
     <div className='text-center'>
