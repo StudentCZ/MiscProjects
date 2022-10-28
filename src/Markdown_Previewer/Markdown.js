@@ -9,6 +9,8 @@ const Markdown = () => {
       <Home />
       <h1 className='mt-3'>Type Text Below</h1>
       <textarea
+        className='w-50'
+        style={{ height: 200 }}
         id='editor'
         onChange={(event) => {
           setText(event.target.value);
