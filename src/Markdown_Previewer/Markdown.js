@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Home from '../Home';
+import { marked } from 'marked';
 
 const Markdown = () => {
   const [text, setText] = useState('');
@@ -23,7 +24,7 @@ const Markdown = () => {
           <div
             class='border p-4'
             style={{ backgroundColor: 'lightblue' }}
-            dangerouslySetInnerHTML={{ __html: markdown({ text }) }}
+            dangerouslySetInnerHTML={{ __html: marked(text) }}
           ></div>
         </div>
       </div>
