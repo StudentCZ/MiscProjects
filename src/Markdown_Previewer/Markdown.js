@@ -3,7 +3,7 @@ import Home from '../Home';
 import { marked } from 'marked';
 
 const Markdown = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState('# H');
 
   return (
     <div className='text-center'>
@@ -13,6 +13,7 @@ const Markdown = () => {
         className='w-75'
         style={{ height: 200 }}
         id='editor'
+        value={text}
         onChange={(event) => {
           setText(event.target.value);
         }}
@@ -22,6 +23,7 @@ const Markdown = () => {
         <h1>Markdown Previewer</h1>
         <div class='text-center'>
           <div
+            id='preview'
             class='border p-4'
             style={{ backgroundColor: 'lightblue' }}
             dangerouslySetInnerHTML={{ __html: marked(text) }}
