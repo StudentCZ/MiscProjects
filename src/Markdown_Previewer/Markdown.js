@@ -20,9 +20,11 @@ const Markdown = () => {
       <div class='border border-danger p-5 pt-2 m-5 mt-5'>
         <h1>Markdown Previewer</h1>
         <div class='text-center'>
-          <div class='border p-4' style={{ backgroundColor: 'lightblue' }}>
-            {text}
-          </div>
+          <div
+            class='border p-4'
+            style={{ backgroundColor: 'lightblue' }}
+            dangerouslySetInnerHTML={{ __html: markdown({ text }) }}
+          ></div>
         </div>
       </div>
     </div>
