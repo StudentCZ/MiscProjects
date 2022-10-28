@@ -3,7 +3,17 @@ import Home from '../Home';
 import { marked } from 'marked';
 
 const Markdown = () => {
-  const [text, setText] = useState(`# Name: Sam`);
+  const [text, setText] = useState(`
+  # Name: ???
+  ## Favorite Food: ???
+  [Food](https://izzycooking.com/wp-content/uploads/2022/04/Sushi-01.jpg)
+  ![alt Text]()
+
+  `);
+
+  marked.setOptions({
+    breaks: true,
+  });
 
   return (
     <div className='text-center'>
