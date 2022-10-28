@@ -7,7 +7,7 @@ const Markdown = () => {
   # Name: ???
   ## Favorite Food: ???
   [Food](https://izzycooking.com/wp-content/uploads/2022/04/Sushi-01.jpg)
-  ![alt Text]()
+  ![image]()
 
   `);
 
