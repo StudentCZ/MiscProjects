@@ -4,10 +4,11 @@ import { marked } from 'marked';
 
 const Markdown = () => {
   const [text, setText] = useState(`
-  # Name: ???
-  ## Favorite Food: ???
-  [Food](https://izzycooking.com/wp-content/uploads/2022/04/Sushi-01.jpg)
-  ![image]()
+  # H1
+  ## H2
+  []() LINK
+  ![]() Image
+  ** Bold Text **
 
   `);
 
