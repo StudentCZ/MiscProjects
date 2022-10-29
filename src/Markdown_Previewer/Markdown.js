@@ -9,6 +9,13 @@ const Markdown = () => {
   []() LINK
   ![]() Image
   ** Bold Text **
+  *Italicized Text*
+  > BlockQuote
+
+  LIST
+  1. First item
+  2. Second item
+  3. Third item
 
   `);
 
