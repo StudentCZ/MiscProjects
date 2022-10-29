@@ -12,10 +12,17 @@ const Markdown = () => {
   *Italicized Text*
   > BlockQuote
 
-  LIST
-  1. First item
-  2. Second item
-  3. Third item
+Ordered List
+1. First item
+2. Second item
+3. Third item
+
+Unordered List
+- First item
+- Second item
+- Third item
+
+ \`code\`
 
   `);
 
