@@ -3,8 +3,8 @@ import { useState } from 'react';
 
 const Calculator = () => {
   return (
-    <div class='calculator card'>
-      <input />
+    <div className='calculator card'>
+      <input type='text' className='calculator screen z-depth-1' value='0' />
     </div>
   );
 };
