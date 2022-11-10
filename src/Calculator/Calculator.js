@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const Calculator = () => {
   return (
-    <div className='calculator card'>
+    <div className='calculator card' style={{ width: '400px' }}>
       <input type='text' className='calculator-screen z-depth-1' value='0' />
       <div className='calculator-keys'>
         <button type='button' className='btn btn-info waves-effect'>
