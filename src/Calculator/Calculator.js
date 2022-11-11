@@ -28,17 +28,25 @@ const Calculator = () => {
               +
             </button>
           </div>
-
-          <button type='button' className='btn btn-info waves-effect'>
-            4
-          </button>
         </div>
-        <button type='button' className='btn btn-info waves-effect'>
-          5
-        </button>
-        <button type='button' className='btn btn-info waves-effect'>
-          6
-        </button>
+        <div className='row'>
+          <div className='col'>
+            <button type='button' className='btn btn-info waves-effect'>
+              4
+            </button>
+          </div>
+          <div className='col'>
+            <button type='button' className='btn btn-info waves-effect'>
+              5
+            </button>
+          </div>
+          <div className='col'>
+            <button type='button' className='btn btn-info waves-effect'>
+              6
+            </button>
+          </div>
+          <div className='col'></div>
+        </div>
         <button type='button' className='btn btn-info waves-effect'>
           1
         </button>
