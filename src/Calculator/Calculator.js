@@ -7,15 +7,22 @@ const Calculator = () => {
       <input type='text' className='calculator-screen z-depth-1' value='0' />
       <div className='calculator-keys'>
         <div className='row'>
-          <button type='button' className='btn btn-info waves-effect'>
-            7
-          </button>
-          <button type='button' className='btn btn-info waves-effect'>
-            8
-          </button>
-          <button type='button' className='btn btn-info waves-effect'>
-            9
-          </button>
+          <div className='col'>
+            <button type='button' className='btn btn-info waves-effect'>
+              7
+            </button>
+          </div>
+          <div className='col'>
+            <button type='button' className='btn btn-info waves-effect'>
+              8
+            </button>
+          </div>
+          <div className='col'>
+            <button type='button' className='btn btn-info waves-effect'>
+              9
+            </button>
+          </div>
+
           <button type='button' className='btn btn-info waves-effect'>
             4
           </button>
