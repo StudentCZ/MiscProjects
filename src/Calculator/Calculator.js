@@ -23,6 +23,12 @@ const Calculator = () => {
             </button>
           </div>
 
+          <div className='col'>
+            <button type='button' class='operator btn btn-info' value='+'>
+              +
+            </button>
+          </div>
+
           <button type='button' className='btn btn-info waves-effect'>
             4
           </button>
