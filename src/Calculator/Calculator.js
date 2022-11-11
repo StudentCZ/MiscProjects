@@ -45,6 +45,9 @@ const Calculator = () => {
               6
             </button>
           </div>
+          <button type='button' class='operator btn btn-danger' value='+'>
+            -
+          </button>
           <div className='col'></div>
         </div>
         <button type='button' className='btn btn-info waves-effect'>
