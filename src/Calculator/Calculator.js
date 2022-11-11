@@ -24,7 +24,7 @@ const Calculator = () => {
           </div>
 
           <div className='col'>
-            <button type='button' class='operator btn btn-info' value='+'>
+            <button type='button' class='operator btn btn-danger' value='+'>
               +
             </button>
           </div>
